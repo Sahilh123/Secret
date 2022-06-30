@@ -30,7 +30,10 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // connecting with mongoose database
-mongoose.connect("mongodb://localhost:27017/userDB", { useNewUrlParser: true });
+mongoose.connect(
+  "mongodb+srv://admin-Sahil:SAHIL1234@cluster0.sdjuhhr.mongodb.net/userDB",
+  { useNewUrlParser: true }
+);
 //end connecting with mongoose database
 
 const userSchema = new mongoose.Schema({
